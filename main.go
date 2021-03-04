@@ -14,12 +14,9 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	var oneLine, verboseMode bool
 	var webhookURL, lines string
 
 	flag.StringVar(&webhookURL, "u", "", "Discord Webhook URL")
-	flag.BoolVar(&oneLine, "1", false, "Send message line by line")
-	flag.BoolVar(&verboseMode, "v", false, "Verbose mode")
 	flag.Parse()
 
 	webhookENV := os.Getenv("DISCORD_WEBHOOK_URL")
@@ -27,9 +24,7 @@ func main() {
 		webhookURL = webhookENV
 	}else{
 		if webhookURL == "" {
-		    if verboseMode {
 		        fmt.Println("Discord Webhook URL not set!")
-		    }
 		}
 	}
 
