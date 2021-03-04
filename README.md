@@ -6,7 +6,7 @@ A simple tool to send your CLI output to your Discord channel.
 
 ### *Configuration*
 1.Get your discord channel webhook.<br/>
-Step to is OPTIONAL<br/>
+Step 2 is OPTIONAL<br/>
 2.`export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/xxx/xxx"`
 
 ### *Usage*
