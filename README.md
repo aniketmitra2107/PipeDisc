@@ -1,15 +1,15 @@
 ## **PipeDisc**
 A simple tool to send your CLI output to your Discord channel.
 
-###Installation
+###*Installation*
 `git clone https://github.com/aniketmitra2107/PipeDisc`
 
-###Configuration
+###*Configuration*
 1.Get your discord channel webhook.<br/>
 Step to is OPTIONAL<br/>
 2.`export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/xxx/xxx"`
 
-###Usage
+###*Usage*
 `echo -e "Test command from PipeDisc" | go run .`
 
 
